@@ -328,7 +328,7 @@ footer {
 	max-width: 960px;
 	margin: auto;
 	padding: 10px 0;
-	height: 90px;
+	height: 95px;
 }
 
 footer h3 {
@@ -378,7 +378,7 @@ footer p {
 	display: block;
 	text-decoration: none;
 	font-size: 12px;
-	margin-bottom: 5px;
+	margin-bottom: 7px;
 }
 
 #sitemap a:hover {
@@ -391,49 +391,35 @@ footer p {
 	margin-left: 20px;
 	width: 140px;
 }
-
-.social-icon {
-	width: 30px;
-	height: 30px;
-	background: url(../images/social.png) no-repeat;
-	display: inline-block;
-	margin-right: 10px;
+.instagram{
+	width:28px;
+	height: 28px;
+	margin-right: 4px;
 }
-
-.social-icon-small  {
-	width: 16px;
-	height: 16px;
-	background: url(../images/social-small.png) no-repeat;
-	display: inline-block;
-	margin: 5px 6px 0 0;
+.telegram{
+	width:28px;
+	height: 28px;
+	margin-right: 4px;
 }
-
-.twitter {
-	background-position: 0 0;
+.vk{
+	width:28px;
+	height: 28px;
+	margin-right: 4px;
 }
-
-.facebook {
-	background-position: -30px 0;
+.mail{
+	width:28px;
+	height: 28px;
+	margin-right: 4px;
 }
-
-.google-plus {
-	background-position: -60px 0;
+.twitter{
+	width:28px;
+	height: 28px;
+	margin-right: 4px;
 }
-
-.vimeo {
-	background-position: 0 0;
-}
-
-.youtube {
-	background-position: -16px 0;
-}
-
-.flickr {
-	background-position: -32px 0;
-}
-
-.instagram {
-	background-position: -48px 0;
+.viber{
+	width:28px;
+	height: 28px;
+	margin-right: 4px;
 }
 
 .rss {
@@ -554,4 +540,19 @@ h4{
 .scroll{
 	width:51px;
 	height: 51px;
+}
+.main-cont-bul{
+	margin-left: 200px;
+	width:1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.h3am{
+	text-align: center;
+}
+.buldpic{
+	width:900px;
+	height: 650px;
 }
