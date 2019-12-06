@@ -1,0 +1,153 @@
+@media screen and (max-width: 1450px) {
+   .search{
+      margin-left:10%;
+   }
+   .mainpics-item{
+      left:0!important;
+   }
+   .work2{
+      top:300px!important;
+      float: left;
+   }
+}
+@media screen and (max-width: 1350px) {
+   .menu{
+      margin-left:7%;
+   }
+}
+@media screen and (max-width: 1280px) {
+   .search{
+      margin-left:5%;
+   }
+}
+@media screen and (max-width: 1230px) {
+   .menu{
+      margin-left:6%;
+   }
+   .search{
+      margin-left:0%;
+   }
+}
+@media screen and (max-width: 1100px) {
+    #wrapp {
+       width: 95%;
+    }
+   #twitter{
+      display:none;
+   }
+    #content {
+       width: 60%;
+       padding: 3% 4%;
+    }
+    #sidebar {
+       width: 30%;
+    }
+    #searchform {
+      position: absolute;
+      top:0;
+      right: 0;
+      margin-top:20px;
+   }
+    #sidebar .aside-menu {
+       padding: 8% 7%;
+       margin-bottom: 10px;
+    }
+    .rel{
+      display:none;
+    }
+    .topnav a{
+      display: none;
+   }
+   .topnav a.icon{
+      float: left;
+      margin-top: -23px;
+      display: block;
+      color:black;
+      font-size: 25px;
+      margin-left:0;
+   }
+   nav{
+      width:100%;
+   }
+  .logo{
+     display:none;
+  }
+   .topnav.responsive{
+      position: relative;
+      top:50px;
+      }
+   header .topnav.responsive{
+      height: 340px;
+      }
+   .topnav.responsive a.icon{
+      position: absolute;
+      top: -50px;
+      left: 0;
+      }
+   .topnav.responsive a{
+      float: none;
+      display: block;
+      text-align: left;
+      left: 100px;
+      }
+   .col-xs-6 .col-sm-6 .col-md-6
+      {
+         width:100%!important;
+      }
+      .team_cards{
+         flex-direction: column;
+      }
+      .team_cards1{
+         flex-direction: column;
+      }
+      .cards{
+         margin:0;
+      }
+ }
+ @media screen and (max-width: 650px) {
+    #header {
+       height: auto;
+    }
+    #main-nav {
+       position: static;
+    }
+    #content {
+       width: auto;
+       float: none;
+       margin: 20px 0;
+    }
+    #sidebar {
+       width: 100%;
+       float: none;
+       margin: 0;
+    }
+   .col-xs-6 .col-sm-6 .col-md-6
+      {
+         width:100%!important;
+      }
+ } 
+@media screen and (max-width: 500px) {
+    html {
+        -webkit-text-size-adjust: none;
+     } 
+   .menu{
+         margin-left:0%;
+   }
+    .content{
+       float:none;
+    }
+    #iframe{
+       width:450px;
+       height: 300px;
+    }
+    aside{
+       display:none;
+    }
+    .search{
+      right: 20px;
+   }
+   .flex-container{
+      flex-direction: column-reverse;
+      display:flex;
+   }
+}
