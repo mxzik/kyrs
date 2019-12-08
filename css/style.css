@@ -327,13 +327,16 @@ footer {
 
 footer h3 {
 	font: 14px 'Oswald', sans-serif;
-	color: #fff;
+	color: black;
 	border-bottom: 1px solid #919191;
 	margin: 0 0 10px 0;
 }
 
 footer a {
-	color: #dbdbdb;
+	color: rgb(36, 31, 31);
+}
+footer a:hover {
+	color:#fff;
 }
 
 #sitemap {
@@ -453,6 +456,10 @@ h4{
 	height:260px;
 	margin:20px auto;
 }
+.photo1{
+	width:260px;
+	height:260px;
+}
 .headh1{
 	border-bottom: 2px solid #7e7e7e;
 }
@@ -478,6 +485,7 @@ h4{
 	display: flex;
 	align-items: stretch;
 	width:400px;
+	height: 110px;
 	background-color: rgb(236, 184, 179);
 	margin:40px 50px 0 65px;
 	border-right: 2px solid rgb(165, 98, 98);
@@ -488,7 +496,7 @@ h4{
 }
 .dogcardinf{
 	width:270px;
-	padding:10px;
+	padding:5px;
 }
 .phdog{
 	text-decoration: none;
@@ -513,20 +521,21 @@ h4{
 	background: url(../images/socialicon/1525974184_1.png) no-repeat;
 }
 .main-cont-bul{
-	margin-left: 200px;
-	width:1200px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: rgb(218, 180, 170);
 }
 .h3am{
 	text-align: center;
 }
 .buldpic{
-	width:1200px;
-	height: 850px;
-	align-items: center;
+	height: auto;
+	align-self: center;
+	margin-bottom: 50px;
+}
+.infimg{
+	width:900px;
+	height: 550px;
 }
 .text-am{
 	color:rgb(22, 9, 9);
@@ -550,7 +559,7 @@ h4{
 .reviewcont{
 	display:flex;
 	align-items: center;
-	margin-left: 430px;
+	flex-direction: column;
 }
 
 .form label{
@@ -622,4 +631,9 @@ h4{
 }
 .formTextRed{
 	color: red;
+}
+.comphis{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
 }

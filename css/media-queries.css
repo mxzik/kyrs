@@ -9,6 +9,10 @@
       top:300px!important;
       float: left;
    }
+   .dogcatal{
+      flex-direction: column;
+      color: black;
+   }
 }
 @media screen and (max-width: 1350px) {
    .menu{
@@ -111,6 +115,14 @@
       .reviewcont{
          margin-left: 130px;
       }
+      .buldpic{
+         width: auto;
+         height: auto;
+      }
+      .infimg{
+         width: auto;
+         height: auto;
+      }
  }
  @media screen and (max-width: 700px){
    #sitemap{
@@ -120,7 +132,7 @@
       margin-left: 70px;
    }
  }
- @media screen and (max-width: 650px) {
+ @media screen and (max-width: 600px) {
    footer{
       height: 230px;
    }
@@ -187,5 +199,9 @@
    .mapcont{
       width:400px;
       height: 300px;
+   }
+   .dogcard{
+      width: 300px;
+      margin: 30px 0 0 25px;
    }
 }
