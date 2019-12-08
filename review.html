@@ -43,25 +43,19 @@
 			<div class="reviewcont">
                     <form  class="form" action="order.php" method="POST">
                             <p>
-                            <label for="lastname"><span class="formTextRed">*</span> Фамилия:</label>
-                            <input type="text" name="lastname" id="lastname" />
+                            <label for="name"><span class="formTextRed">*</span> ФИО:</label>
+                            <input type="text" name="name" id="name" />
                             </p>
-                            <p>
-                            <label for="firstname"><span class="formTextRed">*</span> Имя:</label>
-                            <input type="text" name="firstname" id="firstname" />
-							</p>
 							<p>
 							<label for="email"><span class="formTextRed">*</span> Email:</label>
 							<input type="text" name="email" id="email" />
 							</p>
                             <p>
-                            <label for="comment"><span class="formTextRed">*</span> Отзыв:</label>
-                            <textarea rows="10" name="comment" id="comment"></textarea>
-                            </p>
-                            <p>
-                            <input type="checkbox" name="confirm" id="confirm" />
-                            <label for="confirm" class="confirm"><span class="formTextRed">*</span> Не возражаю против публикации моего отзыва на сайте в рекламных целях:</label>
-                            </p>
+                            <label for="text"><span class="formTextRed">*</span> Отзыв:</label>
+                            <textarea rows="10" name="text" id="text"></textarea>
+							</p>
+							<label for="file"><span class="formTextRed">*</span> Выберите файл:</label>
+							<input type="file" name="myfile[]" multiple id="myfile">
                             <p class="submit">
                             <input type="submit" value="Отправить" />
                             </p>
@@ -100,3 +94,30 @@
 <script type="text/javascript" src="js/script1.js"></script>
 </body>
 </html>
+<script src=”https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script>
+		// Отправка данных на сервер
+		$('#form').trigger('reset');
+		$(function() {
+		  'use strict';
+		  $('#form').on('submit', function(e) {
+			e.preventDefault();
+			$.ajax({
+			  url: 'order.php',
+			  type: 'POST',
+			  contentType: false,
+			  processData: false,
+			  data: new FormData(this),
+			  success: function(msg) {
+				console.log(msg);
+				if (msg == 'ok') {
+				  alert('Сообщение отправлено');
+				  $('#form').trigger('reset'); // очистка формы
+				} else {
+				  alert('Ошибка');
+				}
+			  }
+			});
+		  });
+		});
+		</script>
