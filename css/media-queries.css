@@ -19,6 +19,9 @@
    .search{
       margin-left:5%;
    }
+   .reviewcont{
+      margin-left: 200px;
+   }
 }
 @media screen and (max-width: 1230px) {
    .menu{
@@ -105,10 +108,16 @@
       .cards{
          margin:0;
       }
+      .reviewcont{
+         margin-left: 130px;
+      }
  }
  @media screen and (max-width: 700px){
    #sitemap{
       margin-right:0;
+   }
+   .reviewcont{
+      margin-left: 70px;
    }
  }
  @media screen and (max-width: 650px) {
@@ -138,6 +147,9 @@
       #sitemap{
          margin-left:20px;
       }
+      .reviewcont{
+         margin-left: 50px;
+      }
  } 
 @media screen and (max-width: 500px) {
     html {
@@ -162,5 +174,11 @@
    .flex-container{
       flex-direction: column-reverse;
       display:flex;
+   }
+   .reviewcont{
+      margin-left: 0;
+   }
+   #sitemap{
+      margin-right: 150px;
    }
 }
