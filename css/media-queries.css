@@ -181,4 +181,11 @@
    #sitemap{
       margin-right: 150px;
    }
+   .contacts{
+      margin-left: 0;
+   }
+   .mapcont{
+      width:400px;
+      height: 300px;
+   }
 }
