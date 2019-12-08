@@ -23,10 +23,10 @@ $email = trim($email);
 $country = trim($country);
 $comment = trim($comment);
 $confirm = trim($confirm);
-echo $lastname;
-echo "<br>";
-echo $email;
-if (mail("puderasts@mail.ru", "Отзыв", "Фамилия:".$lastname.".Имя: ".$firstname. ". E-mail: ".$email. ".Страна: ".$country. ".Отзыв: ".$comment. ".Подтверждение на использование: ".$confirm , "From: ximachk@mail.ru \r\n"))
+//echo $fio;
+//echo "<br>";
+//echo $email;
+if (mail("puderasts@mail.ru", "Отзыв", "Фамилия:".$lastname.".Имя: ".$firstname ". E-mail: ".$email. ".Страна: ".$country. ".Отзыв: ".$comment. ".Подтверждение на использование: ".$confirm , "From: ximachk@mail.ru \r\n"))
  {     echo "сообщение успешно отправлено";
 } else {
     echo "при отправке сообщения возникли ошибки";

@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../css/style.css" type="text/css">
 	<link rel="stylesheet" href="../css/layout.css" type="text/css">
 	<link rel="stylesheet" href="../css/media-queries.css" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="wrapp" id="wrapper">
@@ -38,7 +39,7 @@
 				<div class="dogcard">
 					<div class="photodog"><img class="dogphoto" src="dogsimg/amerikanskiy-buldog.jpg" alt="American buldog"></div>
 					<div class="dogcardinf">
-					<h4><a href="/dogs/ambuldog.html">Американский бульдог </a></h4>
+					<h4><a class="phdog" href="ambuldog.html">Американский бульдог </a></h4>
 					<p>Puk</p>
 					</div>
 				</div>
@@ -61,7 +62,7 @@
 					<div class="dogcard">
 						<div class="photodog"><img class="dogphoto" src="dogsimg/amtaff-ter.jpg" alt="American terrish"></div>
 						<div class="dogcardinf">
-						<h4>Американский стаффоширдский терьер </h4>
+						<h4 class="h4dog">Американский стаффоширдский терьер </h4>
 						<p>Puk</p>
 						</div>
 					</div>
@@ -107,38 +108,33 @@
 		</section> 
 	<footer>
 		<div id="footer">
-			<div id="twitter">
-				<h3>Отзыв</h3>
-				<time datetime="2019-10-19"><a href="#">19 октября</a></time>
-				<p></p>
-			</div>
 			<div id="sitemap">
 				<h3>Карта сайта</h3>
 				<div>
-					<a href="/home/">Главная</a>
-					<a href="/about/">О нас</a>
-					<a href="/services/">Адреса</a>
+					<a href="index.html">Главная</a>
+					<a href="about.html">О нас</a>
+					<a href="addres&contacts.html">Адреса</a>
 				</div>
 				<div>
 					<a href="/partners/">Партнеры</a>
 					<a href="/customers/">Поддержка</a>
-					<a href="/contact/">Контакты</a>
+					<a href="addres&contacts.html">Контакты</a>
 				</div>
 			</div>
-			<div id="social">
+			<div class="socialmedia" id="social">
 				<h3>Социальные сети</h3>
-				<a href="http://twitter.com/" class="social-icon twitter"></a>
-				<a href="http://facebook.com/" class="social-icon facebook"></a>
-				<a href="http://plus.google.com/" class="social-icon google-plus"></a>
-				<a href="http://vimeo.com/" class="social-icon-small vimeo"></a>
-				<a href="http://youtube.com/" class="social-icon-small youtube"></a>
-				<a href="http://flickr.com/" class="social-icon-small flickr"></a>
-				<a href="http://instagram.com/" class="social-icon-small instagram"></a>
-				<a href="/rss/" class="social-icon-small rss"></a>
+				<a href="https://instagram.com"><img class="social-icon instagram" src="../images/socialicon/instagram.png"></a> 
+				<a href="https://telegram.com"><img class="social-icon telegram" src="../images/socialicon/telegram.png"></a>
+				<a href="https://vk.com"><img class="social-icon vk" src="../images/socialicon/vk.png"></a>
+				<a href="https://mail.ru"><img class="social-icon mail" src="../images/socialicon/mail.png"></a>
+				<a href="https://twitter.com"><img class="social-icon twitter" src="../images/socialicon/twitter.png"></a>
+				<a href="https://viber.com"><img class="social-icon viber" src="../images/socialicon/viber.png"></a>
+				<a href="https://twitter.com/durassm?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-related="" data-show-count="false">Follow @durassm</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 		</div>
 	</div>
 	</footer>
-<script type="text/javascript" src="js/script1.js"></script>
+	<div id="toTop" class="scrollup"></div>
+<script type="text/javascript" src="../js/script1.js"></script>
 </body>
 </html>

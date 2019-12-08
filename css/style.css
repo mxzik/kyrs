@@ -16,7 +16,6 @@ body {
 }
 #content1{
 	width:100%;
-	margin-bottom:425px;
 }
 section {
 	padding-bottom: 50px;
@@ -67,7 +66,6 @@ article, aside, details, figcaption, figure, footer, header hgroup, menu, nav, s
 
 a{
 	text-decoration: none;
-	
 }
 header{
 	border-bottom: 5px solid #7e7e7e;
@@ -91,8 +89,9 @@ header{
 	margin-left:12%;
 }
 .search{
-	margin-top: 8px;
-	margin-left:25%;
+	line-height: 0.85;
+	margin-left:20%;
+	max-height: 80px;
 }
 .topnav a{
 	color:#7e7e7e;
@@ -193,10 +192,6 @@ aside > p {
 	margin: 0;
 }
 
-form[name="search"] {
-	float: right;
-}
-
 footer {
 	background-color: #7e7e7e;
 }
@@ -214,11 +209,10 @@ nav li {
 	list-style-position: inside;
 	padding: 12px;
 }
-iframe {
-	width:240px;
-	height:170px ;
-}
 
+.mapcont{
+	border: solid 3px black;
+}
 .work-overlay {
     vertical-align: middle;
 	border: 0;
@@ -342,28 +336,12 @@ footer a {
 	color: #dbdbdb;
 }
 
-#twitter time a {
-	color: #b4aeae;
-}
-
-footer p {
-	margin: 5px 0;
-}
-
-#twitter {
-	float: left;
-	width: 550px;
-}
-
-#twitter p {
-	padding-right: 15px;
-}
-
 #sitemap {
 	width: 200px;
 	float: left;
-	margin-left: 20px;
+	margin-left: 120px;
 	padding-right: 15px;
+	margin-right: 250px;
 }
 
 #sitemap div {
@@ -389,41 +367,37 @@ footer p {
 #social {
 	float: left;
 	margin-left: 20px;
-	width: 140px;
+	width: 290px;
 }
 .instagram{
-	width:28px;
-	height: 28px;
+	width:40px;
+	height:40px;
 	margin-right: 4px;
 }
 .telegram{
-	width:28px;
-	height: 28px;
+	width:40px;
+	height:40px;
 	margin-right: 4px;
 }
 .vk{
-	width:28px;
-	height: 28px;
+	width:40px;
+	height:40px;
 	margin-right: 4px;
 }
 .mail{
-	width:28px;
-	height: 28px;
+	width:40px;
+	height:40px;
 	margin-right: 4px;
 }
 .twitter{
-	width:28px;
-	height: 28px;
+	width:40px;
+	height:40px;
 	margin-right: 4px;
 }
 .viber{
-	width:28px;
-	height: 28px;
+	width:40px;
+	height:40px;
 	margin-right: 4px;
-}
-
-.rss {
-	background-position: -64px 0;
 }
 
 .margin-b-5{
@@ -505,18 +479,21 @@ h4{
 .dogcard{
 	display: flex;
 	align-items: stretch;
-	width:300px;
+	width:400px;
 	background-color: rgb(236, 184, 179);
 	margin:40px 50px 0 65px;
 	border-right: 2px solid rgb(165, 98, 98);
-	padding-right: 100px;
 }
 .dogphoto{
 	height:110px;
 	width:130px;
 }
 .dogcardinf{
-	width:170px;
+	width:270px;
+	padding:10px;
+}
+.phdog{
+	text-decoration: none;
 }
 /*section > h2 {
 	background: #29c5e6;
@@ -537,11 +514,26 @@ h4{
 	text-indent:-9999px;
 	background: url(../images/socialicon/1525974184_1.png) no-repeat;
 }
-.scroll{
-	width:51px;
-	height: 51px;
-}
 .main-cont-bul{
+	margin-left: 200px;
+	width:1200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgb(218, 180, 170);
+}
+.h3am{
+	text-align: center;
+}
+.buldpic{
+	width:1200px;
+	height: 850px;
+	align-items: center;
+}
+.text-am{
+	color:rgb(22, 9, 9);
+}
+.contacts{
 	margin-left: 200px;
 	width:1200px;
 	display: flex;
@@ -549,10 +541,89 @@ h4{
 	align-items: center;
 	justify-content: center;
 }
-.h3am{
-	text-align: center;
+.infcont{
+	align-self:center ;
 }
-.buldpic{
-	width:900px;
-	height: 650px;
+.mapmain {
+	width:240px;
+	height:170px ;
+}
+.h4dog{
+	padding:4px;
+}
+.reviewcont{
+	display:flex;
+	align-items: center;
+	margin-left: 430px;
+}
+
+.form label{
+	width: 180px;
+	float: left;
+	color: rgb(99, 75, 75);
+   }
+.form input{
+	width: 400px;
+   }
+   
+.form textarea{
+	width: 400px;
+   }
+.form textarea{
+	width: 400px;
+	max-width: 400px;
+	min-width: 400px;
+	line-height: 150%;
+}
+.confirm{
+	float: none !important;
+}
+   
+.form input[type="checkbox"]{
+	width: auto;
+ }
+ .form input, .form textarea, .form select{
+	padding: 9px;
+	border: 1px solid rgb(165, 163, 163);
+	border-radius: 5px;
+}
+.form input, .form textarea, .form select{
+ padding: 9px;
+ border: 1px solid #E5E5E5;
+ border-radius: 5px;
+ box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+ -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+ -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+ background: #FFF left top repeat-x;
+}
+.form input:hover, .form textarea:hover, .form select:hover,
+.form input:focus, .form textarea:focus, .form select:focus{
+ border-color: #C9C9C9;
+ box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+ -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.form p{
+	margin-bottom: 20px;
+   }
+.form label{
+ width: 180px;
+ float: left;
+ padding-top: 5px;
+}
+.form .submit input{
+	width: auto;
+	background: #617798;
+	color: #FFF;
+	padding: 9px 15px;
+	border: 0;
+	font-size: 14px;
+	cursor: pointer;
+}
+   
+.form .submit input:hover{
+	background: #2B415E;
+}
+.formTextRed{
+	color: red;
 }

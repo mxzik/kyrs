@@ -9,8 +9,8 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 	<link rel="stylesheet" href="css/media-queries.css" type="text/css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
 </head>
 <body>
 	<div class="wrapp" id="wrapper">
@@ -33,18 +33,48 @@
 				</div>
 	</header>
 		<div class="headh1" id="heading">
-			<h1>Наши адреса и контакты</h1>
+			<h1>Отзывы</h1>
 		</div>
 		<section id="content1">
-			<div class="contacts">
-				<div class="contmap">
-						<iframe class="mapcont" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32573.553224318788!2d27.55764417083796!3d53.876269205096634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd044f373be9b%3A0xb5abe268a33e2663!2z0YPQu9C40YbQsCDQkdGA0LXRgdGC0YHQutCw0Y8gNjUsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1575743379824!5m2!1sru!2sby" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-				</div>
-				<div class="infcont"><p>По адресу г. Минск ул.Брестская 65, расположен наш главный офис</p></div>
-				<div class="contmap">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25864.83372538432!2d27.572822826030404!3d53.85817255959799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd1c278ff073b%3A0xc41c28a096b4c3c8!2z0YPQu9C40YbQsCDQn9C70LXRhdCw0L3QvtCy0LAgODIsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1575798876402!5m2!1sru!2sby" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-				</div>
-				<div class="infcont"><p>А по адресу г. Минск ул.Плеханова 82, расположен наш основной питомник с собаками и кошками</p></div>
+            <h2 class="headteam">
+                Здесь вы можете оставить свой отзыв
+            </h2>
+			<div class="reviewcont">
+                    <form  class="form" action="order.php" method="POST">
+                            <p>
+                            <label for="lastname"><span class="formTextRed">*</span> Фамилия:</label>
+                            <input type="text" name="lastname" id="lastname" />
+                            </p>
+                            <p>
+                            <label for="firstname"><span class="formTextRed">*</span> Имя:</label>
+                            <input type="text" name="firstname" id="firstname" />
+							</p>
+							<p>
+							<label for="email"><span class="formTextRed">*</span> Email:</label>
+							<input type="text" name="email" id="email" />
+							</p>
+                            <p>
+                            <label for="country">Страна:</label>
+                            <select name="country" id="country">
+                            <option value="Беларусь">Беларусь</option>
+                            <option value="Россия">Россия</option>
+                            <option value="Украина">Украина</option>
+                            <option value="Польша">Польша</option>
+                            <option value="Другая страна">Другая страна</option>
+                            </select>
+                            </p>
+                            <p>
+                            <label for="comment"><span class="formTextRed">*</span> Отзыв:</label>
+                            <textarea rows="10" name="comment" id="comment"></textarea>
+                            </p>
+                            <p>
+                            <input type="checkbox" name="confirm" id="confirm" />
+                            <label for="confirm" class="confirm"><span class="formTextRed">*</span> Не возражаю против публикации моего отзыва на сайте в рекламных целях:</label>
+                            </p>
+                            <p class="submit">
+                            <input type="submit" value="Отправить" />
+                            </p>
+                            </form>
 			</div>
 		</section>
 		<footer>
