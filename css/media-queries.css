@@ -113,7 +113,7 @@
  }
  @media screen and (max-width: 650px) {
    footer{
-      height: 200px;
+      height: 230px;
    }
     #header {
        height: auto;
@@ -162,5 +162,8 @@
    .flex-container{
       flex-direction: column-reverse;
       display:flex;
+   }
+   .vk{
+      margin-right: 20px;
    }
 }
