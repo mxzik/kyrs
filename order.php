@@ -14,26 +14,14 @@ try {
     $mail->CharSet = "UTF-8";                                          
     $mail->SMTPAuth   = true;
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.ru'; // SMTP сервера GMAIL
-    $mail->Username   = 'Kiril Himach'; // Логин на почте
+    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера GMAIL
+    $mail->Username   = 'puderasts@mail.ru'; // Логин на почте
     $mail->Password   = '2904200154956kx'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('mxzikz8@gmail.com', 'Kiril Himach'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('puderasts@mail.ru', 'Kiril Himach'); // Адрес самой почты и имя отправителя
     // Получатель письма
-    $mail->addAddress('mxzikz7@gmail.com');  
-    // Прикрипление файлов к письму
-if (!empty($_FILES['myfile']['name'][0])) {
-    for ($ct = 0; $ct < count($_FILES['myfile']['tmp_name']); $ct++) {
-        $uploadfile = tempnam(sys_get_temp_dir(), sha1($_FILES['myfile']['name'][$ct]));
-        $filename = $_FILES['myfile']['name'][$ct];
-        if (move_uploaded_file($_FILES['myfile']['tmp_name'][$ct], $uploadfile)) {
-            $mail->addAttachment($uploadfile, $filename);
-        } else {
-            $msg .= 'Неудалось прикрепить файл ' . $uploadfile;
-        }
-    }   
-}
+    $mail->addAddress('ximachk@mail.ru');  
         // -----------------------
         // Само письмо
         // -----------------------
@@ -47,8 +35,8 @@ if (!empty($_FILES['myfile']['name'][0])) {
 if ($mail->send()) {
     echo "$msg";
 } else {
-echo "Сообщение не было отправлено. Неверно указаны настройки вашей почты";
+echo "Nevernie nastroiki pochti";
 }
 } catch (Exception $e) {
-    echo "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+    echo "Prichina oshibki {$mail->ErrorInfo}";
 }
