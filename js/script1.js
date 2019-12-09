@@ -23,8 +23,11 @@ return false;
  
 });
 
+
+
+
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        items:8
+        items:1
     });
 });
