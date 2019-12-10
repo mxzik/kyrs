@@ -9,7 +9,7 @@ $email = $_POST['email'];
 $text = $_POST['text'];
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
-    $msg = "ok";
+    $msg = "Отзыв был отправлен";
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";                                          
     $mail->SMTPAuth   = true;

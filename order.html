@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="UTF-8">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<title>Axido</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/media-queries.css" type="text/css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapp" id="wrapper">
+		<header>
+			<div class="head2">
+			<div class ="logo"><p>Axido</p>
+			</div>
+			<div class="telephones">
+				<p>+375336884696<br/>+375292525544</p>
+			</div>
+			</div>
+			<nav class="menu">
+				<div class="topnav" id="myTopnav">
+						<a href="index.html">Главная</a>
+						<a href="tools.html">Товары для животных</a>
+						<a href="about.html">О нас</a>
+						<a href="addres&contacts.html">Наши адреса и контакты</a>
+						<a class="active" href="review.html">Отзывы</a>
+						<a href="#" id="menu" class="icon">&#9776;</a>
+				</div>	
+			</nav>
+	</header>
+		<div class="headh1" id="heading">
+			<h1>Заказ</h1>
+		</div>
+		<aside id="sidebar" class="sidebar">
+				<nav>
+					<ul class="aside-menu">
+						<li><a href="cats/catscatalog.html">Кошки</a></li>
+						<li><a href="dogs/dogscatalog.html">Собаки</a></li>
+						<li><a href="tools.html">Аксессуары для кошек</a></li>
+						<li><a href="tools.html">Аксессуары для собак</a></li>
+					</ul>
+				</nav>
+		</aside>
+		<section id="content1">
+			<div class="reviewcont">
+                    <form  class="form" action="order.php" method="POST">
+                            <p>
+                            <label for="name"><span class="formTextRed">*</span> ФИО:</label>
+                            <input type="text" name="name" id="name" />
+                            </p>
+							<p>
+							<label for="email"><span class="formTextRed">*</span> Email:</label>
+							<input type="text" name="email" id="email" />
+                            </p>
+                            <p>
+                            <label for="userPhone"><span class="formTextRed">*</span> Телефон:</label>    
+                            <input type="text" name="userPhone" id="userPhone" />
+                            </p>
+                            <p>
+                             <label for="animal"><span class="formTextRed">*</span> Телефон:</label>    
+                            <input list="animalsList" type="text" name="animal" placeholder="Выберите животное" id="animal"/>
+                            </p>
+                            <p>
+                            <label for="text"><span class="formTextRed">*</span> Пожелания:</label>
+                            <textarea rows="10" name="text" id="text"></textarea>
+							</p>
+                            <p class="submit">
+                            <input type="submit" value="Отправить" />
+                            </p>
+                            </form>
+                            <datalist id="animalsList">
+                                    <option value="Абиссинская"></option>
+                                    <option value="Американский бульдог"></option>
+                                </datalist>
+			</div>
+			
+		</section>
+		<footer>
+				<div id="footer">
+					<div id="sitemap">
+						<h3>Карта сайта</h3>
+						<div>
+								<a href="index.html">Главная</a>
+								<a href="about.html">О нас</a>
+								<a href="addres&contacts.html">Адреса и контакты</a>
+							</div>
+							<div>
+								<a href="/cats/catscatalog.html">Каталог кошек</a>
+								<a href="/dogs/dogscatalog.html">Каталог собак</a>
+								<a href="tools.html">Аксессуары</a>
+							</div>
+					</div>
+					<div class="socialmedia" id="social">
+						<h3>Социальные сети</h3>
+						<a href="https://instagram.com"><img class="social-icon instagram" src="images/socialicon/instagram.png"></a> 
+						<a href="https://telegram.com"><img class="social-icon telegram" src="images/socialicon/telegram.png"></a>
+						<a href="https://vk.com"><img class="social-icon vk" src="images/socialicon/vk.png"></a>
+						<a href="https://mail.ru"><img class="social-icon mail" src="images/socialicon/mail.png"></a>
+						<a href="https://twitter.com"><img class="social-icon twitter" src="images/socialicon/twitter.png"></a>
+						<a href="https://viber.com"><img class="social-icon viber" src="images/socialicon/viber.png"></a>
+					</div>
+				</div>
+			</div>
+			</footer>
+			<div id="toTop" class="scrollup"></div>
+<script type="text/javascript" src="js/script1.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+</body>
+</html>
