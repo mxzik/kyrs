@@ -337,8 +337,6 @@ footer a:hover {
 }
 
 #sitemap {
-	display: flex;
-	flex-direction: row;
 	width: 270px;
 	float: left;
 	margin-left: 120px;

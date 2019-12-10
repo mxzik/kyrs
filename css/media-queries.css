@@ -251,4 +251,7 @@
    .main-cont-bul{
       margin: 0 30px 0 30px;
    }
+   #sitemap div + div {
+      margin-left: 10px;
+   }
 }
