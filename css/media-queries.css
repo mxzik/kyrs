@@ -28,6 +28,14 @@
    }
 }
 @media screen and (max-width: 1100px) {
+   #content {
+      width: auto;
+      float: none;
+      margin: 20px 150px;
+   }
+   .sidemain{
+      display: none;
+   }
    header{
       display: flex;
       flex-direction: column;
@@ -38,9 +46,6 @@
     #wrapp {
        width: 95%;
     }
-   #twitter{
-      display:none;
-   }
     #content {
        width: 60%;
        padding: 3% 4%;
@@ -50,7 +55,7 @@
     }
     #searchform {
       top:0;
-      right: 0;
+      right: 100;
       margin-top:20px;
    }
     #sidebar .aside-menu {
@@ -241,13 +246,13 @@
    .dogcardinf{
       width:270px;
    }
-   h2{
-      display: none;
-   }
    .par{
       margin: 0 30px 0 30px;
    }
    .main-cont-bul{
       margin: 0 30px 0 30px;
+   }
+   footer{
+      height: 180px;
    }
 }
