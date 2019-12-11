@@ -3,12 +3,16 @@
       left:0!important;
    }
    .work2{
-      top:300px!important;
+      top:380px;
       float: left;
    }
    .dogcatal{
       flex-direction: column;
       color: black;
+   }
+   .mainpics{
+      height:780px!important;
+      margin-left:150px;
    }
 }
 @media screen and (max-width: 1350px) {
@@ -128,6 +132,12 @@
       .logo{
          margin-right: 450px;
       }
+      .work2{
+         top:390px;
+      }
+      .mainpics{
+         margin-left:auto;
+      }
  }
  @media screen and (max-width: 700px){
    #sitemap{
@@ -145,8 +155,21 @@
    .main-cont-bul{
       margin: 0 70px 0 70px;
    }
+   .work2{
+      top:310px;
+   }
+   .owl-carousel{
+      top:-100px;
+   }
+   .mapcont{
+      width:600px;
+      height: 450px;
+   }
  }
  @media screen and (max-width: 600px) {
+   .owl-carousel{
+      top:-30px;
+   }
     .mapmain{
        margin-left: 130px;
     }
@@ -194,6 +217,13 @@
       .form textarea{
          width: 300px;
          }
+         .work2{
+            top:380px;
+         }
+         .mapcont{
+            width:500px;
+            height: 350px;
+         }
  } 
 @media screen and (max-width: 500px) {
    .logo{
@@ -226,7 +256,7 @@
       margin-left: 0;
    }
    .mapcont{
-      width:370px;
+      width:350px;
       height: 300px;
    }
    .dogcard{
@@ -235,9 +265,6 @@
    }
    .cat1{
       top:30px;
-   }
-   .mainpics{
-      height:500px;
    }
    .dogcard{
       height: auto;
@@ -253,5 +280,14 @@
    }
    #sitemap div + div {
       margin-left: 10px;
+   }
+   .work2{
+      top:250px;
+   }
+   .mainpics-item{
+      margin-left:10px;
+   }
+   .owl-carousel{
+      top:-250px;
    }
 }
