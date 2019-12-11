@@ -7,7 +7,6 @@ menu.onclick = function myfuction(){
     }
 
 $(document).ready(function(){
- 
 $(window).scroll(function(){
 if ($(this).scrollTop() > 100) {
 $('.scrollup').fadeIn();
@@ -27,7 +26,7 @@ return false;
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        items:1
+        items:2
     });
 });
 
